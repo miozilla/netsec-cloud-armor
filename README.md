@@ -1,5 +1,5 @@
 # netsec-cloud-armor
-netsec-cloud-armor : Network Security # Cloud Armor
+netsec-cloud-armor : Network Security # Cloud Armor # Load Balancer
 
 ## Objective
 To create Google Cloud Armor security policy.

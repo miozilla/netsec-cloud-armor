@@ -1,0 +1,16 @@
+# Sample Common Expression Language (CEL)
+# set Cloud Armor netSec Policy
+name: "block-policy"
+description: "Blocks traffic from specific IP ranges and countries"
+rules:
+  - action: "deny(404)"
+    description: "Block traffic from specific IP ranges"
+    expression: "inIpRange(origin.ip, '192.168.1.0/24') || inIpRange(origin.ip, '203.0.113.0/24')"
+
+  - action: "deny(404)"
+    description: "Block traffic from certain countries"
+    expression: "origin.region_code in ['CN', 'RU', 'KP']"
+
+  - action: "deny(404)"
+    description: "Block requests with suspicious user-agents"
+    expression: "request.headers['User-Agent'].contains('BadBot')"
