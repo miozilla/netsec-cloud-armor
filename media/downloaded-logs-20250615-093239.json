@@ -1,0 +1,316 @@
+[
+  {
+    "insertId": "45uialf3351oi",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.loadbalancing.type.LoadBalancerLogEntry",
+      "backendTargetProjectNumber": "projects/732565673592",
+      "cacheDecision": [
+        "RESPONSE_HAS_CONTENT_TYPE",
+        "CACHE_MODE_USE_ORIGIN_HEADERS"
+      ],
+      "statusDetails": "response_sent_by_backend",
+      "remoteIp": "60.48.168.124",
+      "enforcedSecurityPolicy": {
+        "configuredAction": "ALLOW",
+        "name": "blocklist-access-test",
+        "outcome": "ACCEPT",
+        "priority": 2147483647
+      },
+      "securityPolicyRequestData": {
+        "remoteIpInfo": {
+          "regionCode": "MY",
+          "asn": 4788
+        }
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "http://34.13.119.87/favicon.ico",
+      "requestSize": "377",
+      "status": 404,
+      "responseSize": "452",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0",
+      "remoteIp": "60.48.168.124",
+      "referer": "http://34.13.119.87/",
+      "serverIp": "10.138.0.3",
+      "latency": "0.166977s"
+    },
+    "resource": {
+      "type": "http_load_balancer",
+      "labels": {
+        "zone": "global",
+        "forwarding_rule_name": "web-rule",
+        "target_proxy_name": "web-lb-proxy",
+        "project_id": "qwiklabs-gcp-00-8846222579a4",
+        "backend_service_name": "web-backend",
+        "url_map_name": "web-lb"
+      }
+    },
+    "timestamp": "2025-06-15T01:24:38.246460Z",
+    "severity": "WARNING",
+    "logName": "projects/qwiklabs-gcp-00-8846222579a4/logs/requests",
+    "trace": "projects/qwiklabs-gcp-00-8846222579a4/traces/80c6b2fed1900a672102eb89add16577",
+    "receiveTimestamp": "2025-06-15T01:24:38.747639447Z",
+    "spanId": "e769af6c488c3706"
+  },
+  {
+    "insertId": "wii9vkfgf7f5r",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.loadbalancing.type.LoadBalancerLogEntry",
+      "cacheDecision": [
+        "RESPONSE_HAS_CONTENT_TYPE",
+        "CACHE_MODE_USE_ORIGIN_HEADERS"
+      ],
+      "statusDetails": "denied_by_security_policy",
+      "backendTargetProjectNumber": "projects/732565673592",
+      "enforcedSecurityPolicy": {
+        "priority": 1000,
+        "outcome": "DENY",
+        "name": "blocklist-access-test",
+        "configuredAction": "DENY"
+      },
+      "remoteIp": "104.199.113.207",
+      "securityPolicyRequestData": {
+        "remoteIpInfo": {
+          "asn": 15169,
+          "regionCode": "US"
+        }
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "http://34.13.119.87/",
+      "requestSize": "76",
+      "status": 404,
+      "responseSize": "258",
+      "userAgent": "curl/7.88.1",
+      "remoteIp": "104.199.113.207",
+      "latency": "0.102288s"
+    },
+    "resource": {
+      "type": "http_load_balancer",
+      "labels": {
+        "target_proxy_name": "web-lb-proxy",
+        "forwarding_rule_name": "web-rule",
+        "zone": "global",
+        "project_id": "qwiklabs-gcp-00-8846222579a4",
+        "url_map_name": "web-lb",
+        "backend_service_name": "web-backend"
+      }
+    },
+    "timestamp": "2025-06-15T01:25:37.455692Z",
+    "severity": "WARNING",
+    "logName": "projects/qwiklabs-gcp-00-8846222579a4/logs/requests",
+    "trace": "projects/qwiklabs-gcp-00-8846222579a4/traces/6f02e48b1d5ff86abf7ae827543b6f4f",
+    "receiveTimestamp": "2025-06-15T01:25:38.433589318Z",
+    "spanId": "407d24d2abae88b3"
+  },
+  {
+    "insertId": "1gqolukfg4e69x",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.loadbalancing.type.LoadBalancerLogEntry",
+      "statusDetails": "denied_by_security_policy",
+      "securityPolicyRequestData": {
+        "remoteIpInfo": {
+          "asn": 15169,
+          "regionCode": "US"
+        }
+      },
+      "enforcedSecurityPolicy": {
+        "name": "blocklist-access-test",
+        "outcome": "DENY",
+        "configuredAction": "DENY",
+        "priority": 1000
+      },
+      "remoteIp": "104.199.113.207",
+      "backendTargetProjectNumber": "projects/732565673592",
+      "cacheDecision": [
+        "RESPONSE_HAS_CONTENT_TYPE",
+        "CACHE_MODE_USE_ORIGIN_HEADERS"
+      ]
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "http://34.13.119.87/",
+      "requestSize": "76",
+      "status": 404,
+      "responseSize": "258",
+      "userAgent": "curl/7.88.1",
+      "remoteIp": "104.199.113.207",
+      "latency": "0.102368s"
+    },
+    "resource": {
+      "type": "http_load_balancer",
+      "labels": {
+        "backend_service_name": "web-backend",
+        "forwarding_rule_name": "web-rule",
+        "target_proxy_name": "web-lb-proxy",
+        "project_id": "qwiklabs-gcp-00-8846222579a4",
+        "url_map_name": "web-lb",
+        "zone": "global"
+      }
+    },
+    "timestamp": "2025-06-15T01:25:45.476718Z",
+    "severity": "WARNING",
+    "logName": "projects/qwiklabs-gcp-00-8846222579a4/logs/requests",
+    "trace": "projects/qwiklabs-gcp-00-8846222579a4/traces/1f00e13a0f450c0884f4e416db6b3932",
+    "receiveTimestamp": "2025-06-15T01:25:46.848088963Z",
+    "spanId": "dbf4336a7a19c589"
+  },
+  {
+    "insertId": "3x73w4fab8i0e",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.loadbalancing.type.LoadBalancerLogEntry",
+      "backendTargetProjectNumber": "projects/732565673592",
+      "remoteIp": "104.199.113.207",
+      "cacheDecision": [
+        "RESPONSE_HAS_CONTENT_TYPE",
+        "CACHE_MODE_USE_ORIGIN_HEADERS"
+      ],
+      "enforcedSecurityPolicy": {
+        "configuredAction": "DENY",
+        "outcome": "DENY",
+        "priority": 1000,
+        "name": "blocklist-access-test"
+      },
+      "securityPolicyRequestData": {
+        "remoteIpInfo": {
+          "regionCode": "US",
+          "asn": 15169
+        }
+      },
+      "statusDetails": "denied_by_security_policy"
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "http://34.13.119.87/",
+      "requestSize": "76",
+      "status": 404,
+      "responseSize": "258",
+      "userAgent": "curl/7.88.1",
+      "remoteIp": "104.199.113.207",
+      "latency": "0.102091s"
+    },
+    "resource": {
+      "type": "http_load_balancer",
+      "labels": {
+        "project_id": "qwiklabs-gcp-00-8846222579a4",
+        "zone": "global",
+        "forwarding_rule_name": "web-rule",
+        "url_map_name": "web-lb",
+        "backend_service_name": "web-backend",
+        "target_proxy_name": "web-lb-proxy"
+      }
+    },
+    "timestamp": "2025-06-15T01:26:00.383054Z",
+    "severity": "WARNING",
+    "logName": "projects/qwiklabs-gcp-00-8846222579a4/logs/requests",
+    "trace": "projects/qwiklabs-gcp-00-8846222579a4/traces/503413681c7172d72c0eaa70e1af8a2b",
+    "receiveTimestamp": "2025-06-15T01:26:01.424247060Z",
+    "spanId": "47092f0e8905bd20"
+  },
+  {
+    "insertId": "1j9qaq4f8jjokx",
+    "jsonPayload": {
+      "backendTargetProjectNumber": "projects/732565673592",
+      "securityPolicyRequestData": {
+        "remoteIpInfo": {
+          "asn": 15169,
+          "regionCode": "US"
+        }
+      },
+      "enforcedSecurityPolicy": {
+        "priority": 1000,
+        "outcome": "DENY",
+        "configuredAction": "DENY",
+        "name": "blocklist-access-test"
+      },
+      "statusDetails": "denied_by_security_policy",
+      "cacheDecision": [
+        "RESPONSE_HAS_CONTENT_TYPE",
+        "CACHE_MODE_USE_ORIGIN_HEADERS"
+      ],
+      "@type": "type.googleapis.com/google.cloud.loadbalancing.type.LoadBalancerLogEntry",
+      "remoteIp": "104.199.113.207"
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "http://34.13.119.87/",
+      "requestSize": "76",
+      "status": 404,
+      "responseSize": "258",
+      "userAgent": "curl/7.88.1",
+      "remoteIp": "104.199.113.207",
+      "latency": "0.102906s"
+    },
+    "resource": {
+      "type": "http_load_balancer",
+      "labels": {
+        "backend_service_name": "web-backend",
+        "zone": "global",
+        "project_id": "qwiklabs-gcp-00-8846222579a4",
+        "target_proxy_name": "web-lb-proxy",
+        "url_map_name": "web-lb",
+        "forwarding_rule_name": "web-rule"
+      }
+    },
+    "timestamp": "2025-06-15T01:26:23.647832Z",
+    "severity": "WARNING",
+    "logName": "projects/qwiklabs-gcp-00-8846222579a4/logs/requests",
+    "trace": "projects/qwiklabs-gcp-00-8846222579a4/traces/d7a4da54e6406c5d7e7cc569b3d74d99",
+    "receiveTimestamp": "2025-06-15T01:26:25.184572557Z",
+    "spanId": "6fe3e4d268eea565"
+  },
+  {
+    "insertId": "skumyafsmpuby",
+    "jsonPayload": {
+      "remoteIp": "104.199.113.207",
+      "cacheDecision": [
+        "RESPONSE_HAS_CONTENT_TYPE",
+        "CACHE_MODE_USE_ORIGIN_HEADERS"
+      ],
+      "@type": "type.googleapis.com/google.cloud.loadbalancing.type.LoadBalancerLogEntry",
+      "statusDetails": "denied_by_security_policy",
+      "securityPolicyRequestData": {
+        "remoteIpInfo": {
+          "regionCode": "US",
+          "asn": 15169
+        }
+      },
+      "backendTargetProjectNumber": "projects/732565673592",
+      "enforcedSecurityPolicy": {
+        "outcome": "DENY",
+        "name": "blocklist-access-test",
+        "priority": 1000,
+        "configuredAction": "DENY"
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "http://34.13.119.87/",
+      "requestSize": "76",
+      "status": 404,
+      "responseSize": "258",
+      "userAgent": "curl/7.88.1",
+      "remoteIp": "104.199.113.207",
+      "latency": "0.102114s"
+    },
+    "resource": {
+      "type": "http_load_balancer",
+      "labels": {
+        "forwarding_rule_name": "web-rule",
+        "url_map_name": "web-lb",
+        "target_proxy_name": "web-lb-proxy",
+        "project_id": "qwiklabs-gcp-00-8846222579a4",
+        "backend_service_name": "web-backend",
+        "zone": "global"
+      }
+    },
+    "timestamp": "2025-06-15T01:28:25.707488Z",
+    "severity": "WARNING",
+    "logName": "projects/qwiklabs-gcp-00-8846222579a4/logs/requests",
+    "trace": "projects/qwiklabs-gcp-00-8846222579a4/traces/be31e6619cf409ced9d42e2231e9504e",
+    "receiveTimestamp": "2025-06-15T01:28:26.790176261Z",
+    "spanId": "3ac46b94b4219d31"
+  }
+]
